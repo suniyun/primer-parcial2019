@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1557253707 source:c:\users\alumno\desktop\primer-parcial-2019\primer-parcial\library.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"library.h"
+
+1557242457 c:\users\alumno\desktop\primer-parcial-2019\primer-parcial\library.h
+
+1557253921 source:c:\users\alumno\desktop\primer-parcial-2019\primer-parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"library.h"
+	"peliculas.h"
+
+1557253707 c:\users\alumno\desktop\primer-parcial-2019\primer-parcial\peliculas.h
+
+1557253572 source:c:\users\alumno\desktop\primer-parcial-2019\primer-parcial\peliculas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"peliculas.h"
+	"library.h"
+
