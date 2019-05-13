@@ -23,3 +23,51 @@
 	"peliculas.h"
 	"library.h"
 
+1557747529 source:c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\library.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"library.h"
+
+1557747529 c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\library.h
+
+1557751466 source:c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"library.h"
+	"peliculas.h"
+	"actores.h"
+	"informes.h"
+
+1557751284 c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\peliculas.h
+
+1557750428 c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\actores.h
+
+1557751284 source:c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\peliculas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"peliculas.h"
+	"library.h"
+	"actores.h"
+
+1557750725 source:c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\actores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"library.h"
+	"actores.h"
+	"peliculas.h"
+
+1557751340 source:c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"peliculas.h"
+	"actores.h"
+	"library.h"
+	"informes.h"
+
+1557750428 c:\users\alumno\desktop\aaaaaaaaaa\primer-parcial\informes.h
+

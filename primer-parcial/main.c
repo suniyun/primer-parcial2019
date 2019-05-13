@@ -4,6 +4,7 @@
 #include "library.h"
 #include "peliculas.h"
 #include "actores.h"
+#include "informes.h"
 #define CANT_PELICULAS 1000
 #define CANT_ACTORES 1000
 
@@ -12,18 +13,19 @@ int main()
     ePeliculas pelicula[CANT_PELICULAS];
     eActor actor[CANT_ACTORES];
     eFechaDeEstreno fecha[CANT_PELICULAS];
+    eGenero genero[CANT_PELICULAS];
     int opcion;
     int id;
-    int indiceVacio;
+    //int indiceVacio;
     int bandera=0;
     int salir=0;
-    cargarDatosVacio(pelicula,CANT_PELICULAS);
+    cargarDatosVaciodePelicula(pelicula,CANT_PELICULAS);
 
     do
     {
         system("cls");
         fflush(stdin);
-        if(chequearIndice(pelicula,CANT_PELICULAS) == -1)
+        if(chequearIndicedePelicula(pelicula,CANT_PELICULAS) == -1)
         {
             bandera = 1;
         }
@@ -35,17 +37,18 @@ int main()
         switch(opcion)
         {
         case 1:
-            if(indicesVacios(pelicula,CANT_PELICULAS,&indiceVacio)==0)
-            {
-                altasDePelicula(pelicula,indiceVacio, CANT_PELICULAS );
-                altasDeActor(actor, indiceVacio, CANT_ACTORES);
-                altaFechaDeEstreno(fecha, indiceVacio, CANT_PELICULAS);
-                break;
-            }
-            else
-            {
-                printf("\nNo hay indice.\n");
-            }
+            hardcodearDatos(pelicula, actor, fecha, genero, CANT_PELICULAS);
+            // if(indicesVaciosdePelicula(pelicula,CANT_PELICULAS,&indiceVacio)==0)
+            //{
+            //   altasDePelicula(pelicula,indiceVacio, CANT_PELICULAS );
+            // altasDeActor(actor, indiceVacio, CANT_ACTORES);
+            // altaFechaDeEstreno(fecha, indiceVacio, CANT_PELICULAS);
+            // break;
+            //}
+            //else
+            //{
+            //  printf("\nNo hay indice.\n");
+            //}
             break;
         case 2:
             if(bandera == 1)
@@ -94,7 +97,7 @@ int main()
         case 4:
             if(bandera == 1)
             {
-                mostrarPeliculasOrdenadas(pelicula, actor, fecha, CANT_PELICULAS);
+                mostrarPeliculasOrdenadas(pelicula, actor, fecha, genero, CANT_PELICULAS);
             }
             else
             {

@@ -13,7 +13,6 @@ int cargarDatosVacio(eActor* actor, int limite);
 
 int altasDeActor(eActor* actor, int indice, int limite);
 int modificarActor(eActor* actor, int indice, int limite);
-int ordenarActoresPorPais(eActor* actor, int limite);
 int buscarActorPorId(eActor* actor, int limite, int id);
 
 #endif // ACTORES_H_INCLUDED

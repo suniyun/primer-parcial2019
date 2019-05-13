@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "library.h"
+#include "actores.h"
 #include "peliculas.h"
 
 static int generarID(void);
@@ -149,46 +150,6 @@ int modificarActor(eActor* actor, int indice, int limite)
         }
     }
     return 0;
-}
-
-/**
-    ordenarActorPorPais: Recibe el array y lo ordena usando el metodo Insertion.
-    \param actor: Guarda el array recibido.
-    \param limite: Guarda el int del limite del array.
-    \return return 0 OK, -1 Error.
-*/
-int ordenarActoresPorPais(eActor* actor, int limite)
-{
-    int retorno = -1;
-    int i;
-    int j;
-    int auxId;
-    char auxPais[51];
-    char auxNombreActor[51];
-    if(actor != NULL && limite > 0)
-    {
-        for(i=0; i < limite; i++)
-        {
-            if(actor[i].isEmpty == 0)
-            {
-                strcpy(auxNombreActor, actor[i].nombreActor);
-                strcpy(auxPais, actor[i].pais);
-                auxId = actor[i].id;
-                j = i-1;
-
-                while(j>=0 && strcmp(auxPais, actor[i].pais) < 0)
-                {
-                    actor[j+1] = actor[j];
-                    j--;
-                }
-                strcpy(actor[j+1].nombreActor, auxNombreActor);
-                strcpy(actor[j+1].pais, auxPais);
-                actor[j+1].id = auxId;
-            }
-            retorno = 0;
-        }
-    }
-    return retorno;
 }
 
 int buscarActorPorId(eActor* actor, int limite, int id)
