@@ -3,6 +3,7 @@
 #include <string.h>
 #include "library.h"
 #include "peliculas.h"
+#include "actores.h"
 #define CANT_PELICULAS 1000
 #define CANT_ACTORES 1000
 
@@ -17,7 +18,6 @@ int main()
     int bandera=0;
     int salir=0;
     cargarDatosVacio(pelicula,CANT_PELICULAS);
-    hardcodearDatos(pelicula, actor, fecha, 20);
 
     do
     {

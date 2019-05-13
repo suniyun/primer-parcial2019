@@ -12,14 +12,6 @@ typedef struct
 
 typedef struct
 {
-    int id;
-    char nombreActor[51];
-    char pais[51];
-    int isEmpty;
-} eActor;
-
-typedef struct
-{
     int dia;
     int mes;
     int ano;
@@ -34,11 +26,6 @@ int altasDePelicula(ePeliculas* pelicula, int indice, int limite);
 int modificarPelicula(ePeliculas* pelicula, int indice, int limite);
 int bajasDePelicula(ePeliculas* pelicula, int indice, int limite);
 int mostrarPeliculasOrdenadas(ePeliculas* pelicula, eActor* actor, eFechaDeEstreno* fecha, int limite);
-
-int altasDeActor(eActor* actor, int indice, int limite);
-int modificarActor(eActor* actor, int indice, int limite);
-int ordenarActoresPorPais(eActor* actor, int limite);
-int buscarActorPorId(eActor* actor, int limite, int id);
 
 int altaFechaDeEstreno(eFechaDeEstreno* fecha, int indice, int limite);
 int modificarFechaDeEstreno(eFechaDeEstreno* fecha, int indice, int limite);

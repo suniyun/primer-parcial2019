@@ -3,6 +3,7 @@
 #include <string.h>
 #include "peliculas.h"
 #include "library.h"
+#include "actores.h"
 
 static int generarID(void);
 
@@ -366,7 +367,7 @@ int altaFechaDeEstreno(eFechaDeEstreno* fecha, int indice, int limite)
 
     if(getEntero(&auxDia,2,"Ingrese el dia de estreno:\n","\nError\n",32,0) == 0)
     {
-        if(getEntero(&auxMes,2,"Ingrese el mes de estreno: \n","\nError\n",12,0)== 0)
+        if(getEntero(&auxMes,2,"Ingrese el mes de estreno: \n","\nError\n",13,0)== 0)
         {
             if(getEntero(&auxAno,2,"Ingrese el Ano del estreno:\n","\nError\n",9999,0)== 0)
             {
